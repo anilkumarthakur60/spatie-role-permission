@@ -1,0 +1,85 @@
+.dark_blue {
+    background: rgb(11, 7, 84);
+    color: white;
+}
+
+.dark_blue_heading {
+    color: rgb(11, 7, 84);
+    font-weight: bold;
+}
+
+.dark_blue:hover {
+    color: red;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+.blue_color {
+    background: #4951EC;
+}
+
+@media (min-width: 992px) {
+    .vertical_center_image {
+        min-height: 70%;
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+    }
+    .vertical_center_login_form {
+        min-height: 70%;
+        min-height: 70vh;
+        width: 75%;
+        display: flex;
+        align-items: center
+    }
+    .feature_image_login {
+        max-width: 75%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 769px) {
+    .vertical_center_image {
+        min-height: 80%;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+    }
+    .vertical_center_login_form {
+        min-height: 80%;
+        min-height: 80vh;
+        display: flex;
+        align-items: center
+    }
+    .feature_image_login {
+        max-width: 75%;
+        height: auto;
+    }
+    h2 {
+        font-size: 26px;
+    }
+}
+
+@media(max-width: 576px) {
+    .dark_blue_heading {
+        text-align: center!important;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .landind_text {
+        text-align: center;
+    }
+}
+
+.dashboard_tab {
+    background-color: rgb(206, 207, 211);
+    color: #0B0754;
+}
+
+.dashboard_tab:active {
+    background-color: rgb(231, 232, 250);
+    color: #0B0754;
+}
