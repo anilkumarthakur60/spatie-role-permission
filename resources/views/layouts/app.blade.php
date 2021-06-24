@@ -7,7 +7,8 @@
 
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
-    {{-- <link rel="stylesheet" href="{{ asset('backend/plugins/fontawesome-free/css/all.min.css')}}"> --}}
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha512-0S+nbAYis87iX26mmj/+fWt1MmaKCv80H+Mbo+Ne7ES4I6rxswpfnC6PxmLiw33Ywj2ghbtTw0FkLbMWqh4F7Q==" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="{{ asset('backend/plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
@@ -24,6 +25,32 @@
 
     <link rel="stylesheet" href="{{ asset('backend/styles/styles.css') }}">
     <link rel="stylesheet" href="{{ asset('backend/styles/slider.css') }}">
+
+    <style>
+        .bg-danger{
+            background-color: #FA7167!important;
+        }
+        .bg-primary {
+            background-color: #4951EC!important;
+        }
+        .btn-primary {
+            background-color: #4951EC !important;
+            border-color: #4951EC !important;
+        }
+
+
+        .btn-danger{
+            background-color: #FA7167 !important;
+            border-color: #FA7167 !important;
+        }
+        .btn-outline-danger {
+            color: #FA7167 !important;
+            border-color: #FA7167 !important;
+        }
+
+    </style>
+
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed" style=" font-family: 'Roboto'">
@@ -41,8 +68,8 @@
 
             <li class="nav-item dropdown">
                 <a class="nav-link" data-toggle="dropdown" href="#">
-                    <i class="far fa-envelope"></i>
-                    <span class="badge badge-warning navbar-badge">1</span>
+                    <i class="far fa-envelope text-white"></i>
+                    <span class="badge badge-primary navbar-badge">1</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                     <div class="dropdown-divider"></div>
@@ -59,14 +86,14 @@
 
             <li class="nav-item dropdown user-menu">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                    <img src="https://scontent.fktm4-1.fna.fbcdn.net/v/t1.6435-9/182093129_5434114139995236_7634369598449392346_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=jhuImtrVPIUAX9o3fUC&_nc_ht=scontent.fktm4-1.fna&oh=e1ef6045412753751a5cf3461c155d3b&oe=60D3B23A"
+                    <img src="{{ asset('frontend/images/avatar.png') }}"
                          class="user-image img-circle elevation-2" alt="User Image">
                     <span class="d-none d-md-inline">{{ Auth::user()->name }}</span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                     <!-- User image -->
                     <li class="user-header bg-primary">
-                        <img src="https://scontent.fktm4-1.fna.fbcdn.net/v/t1.6435-9/182093129_5434114139995236_7634369598449392346_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=jhuImtrVPIUAX9o3fUC&_nc_ht=scontent.fktm4-1.fna&oh=e1ef6045412753751a5cf3461c155d3b&oe=60D3B23A"
+                        <img src="{{ asset('frontend/images/avatar.png') }}"
                              class="img-circle elevation-2"
                              alt="User Image">
                         <p>
@@ -150,11 +177,12 @@
         <strong>Copyright &copy; 2021-onward <a href="">Telemedicine</a>.</strong> All rights
         reserved.
     </footer>
+
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-crossorigin="anonymous"></script>
-<script src="{{ asset('backend/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
 <script src="{{ asset('backend/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
 <script src="{{ asset('backend/plugins/jquery-mousewheel/jquery.mousewheel.js')}}"></script>
 {{-- <script src="{{ asset('backend/dist/js/pages/dashboard2.js')}}"></script> --}}

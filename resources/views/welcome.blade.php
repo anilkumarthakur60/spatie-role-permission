@@ -11,7 +11,36 @@
 
 
     <link rel="stylesheet" href="{{ asset('frontend/css/style.css') }}">
+    <style>
+        .bg-danger{
+            background-color: #FA7167!important;
+        }
+        .bg-primary {
+            background-color: #4951EC!important;
+        }
+        .btn-primary {
+            background-color: #4951EC !important;
+            border-color: #4951EC !important;
+        }
 
+        .text-primary{
+            color: #4951EC !important
+        }
+        .text-danger{
+            color: #FA7167 !important
+
+        }
+
+        .btn-danger{
+            background-color: #FA7167 !important;
+            border-color: #FA7167 !important;
+        }
+        .btn-outline-danger {
+            color: #FA7167 !important;
+            border-color: #FA7167 !important;
+        }
+
+    </style>
 
 
 </head>

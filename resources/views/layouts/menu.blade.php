@@ -1,4 +1,14 @@
 <li class="nav-item">
+    <a href="{{ route('frontend_index') }}" class="nav-link">
+        <i class="nav-icon fas fa-home"></i>
+        <p>
+            Site
+            <span class="badge badge-info right"></span>
+        </p>
+    </a>
+
+</li>
+<li class="nav-item">
     <a href="#" class="nav-link">
         <i class="nav-icon fas fa-user"></i>
         <p>

@@ -25,7 +25,6 @@ class UserController extends Controller
     {
         $user=User::orderBy('id','desc')->with('roles')->get();
 
-
         return view('user.index')->with('users',$user);
     }
 

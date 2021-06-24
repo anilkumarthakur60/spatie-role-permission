@@ -34,7 +34,7 @@
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <table class="table table-bordered table-striped text-center">
+                            <table class="table table-bordered  text-center">
                                 <thead class="thead-inverse">
                                     <tr>
                                         <th>id</th>

@@ -17,6 +17,10 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles', 'RoleController');
     Route::resource('users', 'UserController');
     Route::resource('products', 'ProductController');
+
+    Route::get('/schedule',function(){
+        return view('backend.schedule.index');
+    })->name('schedule');
 });
 
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
@@ -27,3 +31,6 @@ Route::get('/superadmin', function () {
     $user=User::find(1);
     $user->assignRole('Super-admin');
 });
+
+
+

@@ -1,8 +1,6 @@
 @extends('layouts.app')
 @section('content')
 
-@can('user list')
-
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -36,7 +34,7 @@
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <table id="example1" class="table table-bordered table-striped text-center">
+                            <table id="example1" class="table table-bordered  text-center">
                                 <thead>
                                     <tr>
                                         <th>ID</th>
@@ -94,8 +92,6 @@
     </section>
     <!-- /.content -->
 </div>
-@endcan
-
 
 
 @endsection
