@@ -30,7 +30,7 @@
                     <div class="card">
                         <div class="card-header">
                             <h3 class="card-title d-none ">DataTable with default features</h3>
-                            <a href="{{ route('users.create') }}" class=" btn btn-sm btn-info float-right">Add User</a>
+                            <a href="{{ route('users.create') }}" class=" btn btn-sm btn-primary float-right">Add User</a>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -60,10 +60,10 @@
                                             <div class="carousel-item active">
                                                 <div class="row">
                                                     <div class="col-lg-12 ">
-                                                        <div class="table-responsive">
+                                                        <div class="">
 
 
-                                                            <table class="table   text-center">
+                                                            <table class="table table-bordered example1  text-center">
                                                                 <thead class="thead-inverse">
                                                                     <tr>
                                                                         <th class="mx-3"><i class="far fa-clock "></i></th>
@@ -174,25 +174,26 @@
                                                         </div>
 
                                                     </div>
+
                                                 </div>
                                             </div>
                                             <div class="carousel-item">
                                                 <div class="row">
                                                     <div class="col-lg-12 ">
-                                                        <div class="table-responsive">
+                                                        <div class="">
 
 
-                                                            <table class="table   text-center">
+                                                            <table class="table table-bordered example1  text-center">
                                                                 <thead class="thead-inverse">
                                                                     <tr>
-                                                                        <th class="mx-3"><i class="far fa-clock "></i></th>
-                                                                        <th><span class="badge badge-primary rounded-circle mx-3">19</span>SUN</th>
-                                                                        <th><span class="mx-3">20</span>MON</th>
-                                                                        <th><span class="mx-3">22</span>TUE</th>
-                                                                        <th><span class="mx-3">22</span>WED</th>
-                                                                        <th><span class="mx-3">23</span>THU</th>
-                                                                        <th><span class="mx-3">24</span>FRI</th>
-                                                                        <th><span class="mx-3">25</span>SAT</th>
+                                                                        <th class=""><i class="far fa-clock "></i></th>
+                                                                        <th><span class="badge badge-primary rounded-circle ">19</span>SUN</th>
+                                                                        <th><span class="">20</span>MON</th>
+                                                                        <th><span class="">22</span>TUE</th>
+                                                                        <th><span class="">22</span>WED</th>
+                                                                        <th><span class="">23</span>THU</th>
+                                                                        <th><span class="">24</span>FRI</th>
+                                                                        <th><span class="">25</span>SAT</th>
 
                                                                     </tr>
                                                                 </thead>
@@ -301,7 +302,7 @@
                                                         <div class="table-responsive">
 
 
-                                                            <table class="table   text-center">
+                                                            <table class="table table-bordered example1  text-center">
                                                                 <thead class="thead-inverse">
                                                                     <tr>
                                                                         <th class="mx-3"><i class="far fa-clock "></i></th>

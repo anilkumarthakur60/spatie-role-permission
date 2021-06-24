@@ -30,7 +30,7 @@
                     <div class="card">
                         {{-- <div class="card-header">
                             <h3 class="card-title ">Featured Dashboard</h3>
-                            <a href="{{ route('users.create') }}" class=" btn btn-sm btn-info float-right">Add User</a>
+                            <a href="{{ route('users.create') }}" class=" btn btn-sm btn-primary float-right">Add User</a>
                         </div> --}}
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -237,7 +237,7 @@
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <h4 class="dark_blue_heading my-4">Patient List</h4>
-                                            <table class="table  table-responsive text-center border rounded rounded-lg example2 "  >
+                                            <table class="table table-bordered example1 text-center border  "  >
                                                 <thead class="thead-inverse">
                                                     <tr>
                                                         <th style="font-size: small;">sn</th>
@@ -255,7 +255,7 @@
                                                         <td style="font-size: small;">sdcjdsvjs</td>
                                                         <td style="font-size: small;">jsvjsdvn</td>
                                                         <td style="font-size: small;">
-                                                            <a href="" class="btn btn-sm btn-info"><i class="fas fa-edit    "></i></a>
+                                                            <a href="" class="btn btn-sm btn-primary"><i class="fas fa-edit    "></i></a>
                                                         </td>
                                                         <td style="font-size: small;">
                                                             <form action="" method="post">
@@ -270,7 +270,7 @@
                                                         <td style="font-size: small;">sdcjdsvjs</td>
                                                         <td style="font-size: small;">jsvjsdvn</td>
                                                         <td style="font-size: small;">
-                                                            <a href="" class="btn btn-sm btn-info"><i class="fas fa-edit    "></i></a>
+                                                            <a href="" class="btn btn-sm btn-primary"><i class="fas fa-edit    "></i></a>
                                                         </td>
                                                         <td style="font-size: small;">
                                                             <form action="" method="post">
@@ -285,7 +285,7 @@
                                                         <td style="font-size: small;">sdcjdsvjs</td>
                                                         <td style="font-size: small;">jsvjsdvn</td>
                                                         <td style="font-size: small;">
-                                                            <a href="" class="btn btn-sm btn-info"><i class="fas fa-edit    "></i></a>
+                                                            <a href="" class="btn btn-sm btn-primary"><i class="fas fa-edit    "></i></a>
                                                         </td>
                                                         <td style="font-size: small;">
                                                             <form action="" method="post">
@@ -300,7 +300,7 @@
                                                         <td style="font-size: small;">sdcjdsvjs</td>
                                                         <td style="font-size: small;">jsvjsdvn</td>
                                                         <td style="font-size: small;">
-                                                            <a href="" class="btn btn-sm btn-info"><i class="fas fa-edit    "></i></a>
+                                                            <a href="" class="btn btn-sm btn-primary"><i class="fas fa-edit    "></i></a>
                                                         </td>
                                                         <td style="font-size: small;">
                                                             <form action="" method="post">
@@ -315,7 +315,7 @@
                                                         <td style="font-size: small;">sdcjdsvjs</td>
                                                         <td style="font-size: small;">jsvjsdvn</td>
                                                         <td style="font-size: small;">
-                                                            <a href="" class="btn btn-sm btn-info"><i class="fas fa-edit    "></i></a>
+                                                            <a href="" class="btn btn-sm btn-primary"><i class="fas fa-edit    "></i></a>
                                                         </td>
                                                         <td style="font-size: small;">
                                                             <form action="" method="post">
@@ -330,7 +330,7 @@
                                         </div>
                                         <div class="col-sm-6">
                                             <h4 class="dark_blue_heading my-4">Doctor List</h4>
-                                            <table class="table  table-responsive text-center border rounded rounded-lg example2 " >
+                                            <table class="table table-bordered example1 text-center border  " >
                                                 <thead class="thead-inverse">
                                                     <tr>
                                                         <th style="font-size: small;">sn</th>
@@ -348,7 +348,7 @@
                                                         <td style="font-size: small;">sdcjdsvjs</td>
                                                         <td style="font-size: small;">jsvjsdvn</td>
                                                         <td style="font-size: small;">
-                                                            <a href="" class="btn btn-sm btn-info"><i class="fas fa-edit    "></i></a>
+                                                            <a href="" class="btn btn-sm btn-primary"><i class="fas fa-edit    "></i></a>
                                                         </td>
                                                         <td style="font-size: small;">
                                                             <form action="" method="post">
@@ -363,7 +363,7 @@
                                                         <td style="font-size: small;">sdcjdsvjs</td>
                                                         <td style="font-size: small;">jsvjsdvn</td>
                                                         <td style="font-size: small;">
-                                                            <a href="" class="btn btn-sm btn-info"><i class="fas fa-edit    "></i></a>
+                                                            <a href="" class="btn btn-sm btn-primary"><i class="fas fa-edit    "></i></a>
                                                         </td>
                                                         <td style="font-size: small;">
                                                             <form action="" method="post">
@@ -378,7 +378,7 @@
                                                         <td style="font-size: small;">sdcjdsvjs</td>
                                                         <td style="font-size: small;">jsvjsdvn</td>
                                                         <td style="font-size: small;">
-                                                            <a href="" class="btn btn-sm btn-info"><i class="fas fa-edit    "></i></a>
+                                                            <a href="" class="btn btn-sm btn-primary"><i class="fas fa-edit    "></i></a>
                                                         </td>
                                                         <td style="font-size: small;">
                                                             <form action="" method="post">
@@ -393,7 +393,7 @@
                                                         <td style="font-size: small;">sdcjdsvjs</td>
                                                         <td style="font-size: small;">jsvjsdvn</td>
                                                         <td style="font-size: small;">
-                                                            <a href="" class="btn btn-sm btn-info"><i class="fas fa-edit    "></i></a>
+                                                            <a href="" class="btn btn-sm btn-primary"><i class="fas fa-edit    "></i></a>
                                                         </td>
                                                         <td style="font-size: small;">
                                                             <form action="" method="post">
@@ -408,7 +408,7 @@
                                                         <td style="font-size: small;">sdcjdsvjs</td>
                                                         <td style="font-size: small;">jsvjsdvn</td>
                                                         <td style="font-size: small;">
-                                                            <a href="" class="btn btn-sm btn-info"><i class="fas fa-edit    "></i></a>
+                                                            <a href="" class="btn btn-sm btn-primary"><i class="fas fa-edit    "></i></a>
                                                         </td>
                                                         <td style="font-size: small;">
                                                             <form action="" method="post">

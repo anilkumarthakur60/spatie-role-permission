@@ -30,11 +30,11 @@
                     <div class="card">
                         <div class="card-header">
                             <h3 class="card-title ">DataTable with default features</h3>
-                            <a href="{{ route('users.create') }}" class=" btn btn-sm btn-info float-right">Add User</a>
+                            <a href="{{ route('users.create') }}" class=" btn btn-sm btn-primary float-right">Add User</a>
                         </div>
                         <!-- /.card-header -->
-                        <div class="card-body">
-                            <table id="example1" class="table table-bordered  text-center">
+                        <div class="card-body ">
+                            <table id="example1" class="table table-bordered example1  text-center">
                                 <thead>
                                     <tr>
                                         <th>ID</th>
@@ -62,7 +62,7 @@
 
                                             </td>
                                             <td>{{ $user_item->created_at->diffForHumans() }}</td>
-                                            <td><a href="{{ route('users.edit',$user_item->id) }}" class="btn btn-sm btn-info"><i class="fas fa-edit    "></i></a></td>
+                                            <td><a href="{{ route('users.edit',$user_item->id) }}" class="btn btn-sm btn-primary"><i class="fas fa-edit    "></i></a></td>
                                             <td>
 
                                                 <form id="delete-form" action="{{ route('users.destroy',$user_item->id) }}" method="POST" >

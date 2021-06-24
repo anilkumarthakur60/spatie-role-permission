@@ -27,6 +27,16 @@
     <link rel="stylesheet" href="{{ asset('backend/styles/slider.css') }}">
 
     <style>
+            [class*=sidebar-dark-] {
+                background-color: #4951EC !important;
+            }
+
+        .navbar-white {
+            background-color: #FA7167 !important;
+        }
+        [class*=sidebar-dark-] .sidebar a {
+            color: white !important;
+        }
         .bg-danger{
             background-color: #FA7167!important;
         }
@@ -46,6 +56,10 @@
         .btn-outline-danger {
             color: #FA7167 !important;
             border-color: #FA7167 !important;
+        }
+
+        .badge-primary{
+            background-color: #4951EC !important;
         }
 
     </style>
@@ -227,18 +241,18 @@
    $(document).ready(function() {
         $(".example1").DataTable({
             "responsive": true,
-            "lengthChange": false,
-            "autoWidth": false,
+                "lengthChange": false,
+                "autoWidth": false,
             "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
         }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
         $('.example2').DataTable({
             "paging": true,
-            "lengthChange": false,
-            "searching": true,
-            "ordering": true,
-            "info": true,
-            "autoWidth": false,
-            "responsive": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
         });
 
     });

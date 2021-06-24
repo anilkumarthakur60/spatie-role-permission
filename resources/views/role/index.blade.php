@@ -31,49 +31,52 @@
                     <div class="card">
                         <div class="card-header">
                             <h3 class="card-title ">DataTable with default features</h3>
-                            <a href="{{ route('roles.create') }}" class=" btn btn-sm btn-info float-right">Add Roles</a>
+                            <a href="{{ route('roles.create') }}" class=" btn btn-sm btn-primary float-right">Add Roles</a>
                         </div>
                         <!-- /.card-header -->
-                        <div class="card-body">
-                            <table id="example1" class="table table-bordered table-responsive text-center">
-                                <thead>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Role Name</th>
-                                        <th>Permissions</th>
-                                        <th>Edit</th>
-                                        <th>Delete</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach ($roles as $role)
+                        <div class="card-body ">
+                            <div class="">
+                                <table id="example1" class="table table-bordered example1  text-center">
+                                    <thead>
                                         <tr>
-                                            <td>{{ $role->id }}</td>
-                                            <td>{{ $role->name }} <span><a href="{{ route('roles.show',$role->id) }}"><i class="fa fa-eye" aria-hidden="true"></i></a></span></td>
-                                            <td>
-                                                @if ($role->permissions->count()>0)
-                                                @foreach ($role->permissions as $permission)
-                                                      <span class=" badge badge-success"> {{ $permission->name }}</span>
-                                                @endforeach
-                                                @endif
-
-                                            </td>
-                                            <td><a href="{{ route('roles.edit',$role->id) }}" class="btn btn-sm btn-info"><i class="fas fa-edit    "></i></a></td>
-                                            <td>
-                                                <form id="delete-form" action="{{ route('roles.destroy',$role->id) }}" method="POST" >
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <button type="submit" class=" btn btn-sm btn-danger"><i class="fas fa-trash" aria-hidden="true"></i></button>
-                                                </form>
-                                            </td>
+                                            <th>ID</th>
+                                            <th>Role Name</th>
+                                            <th>Permissions</th>
+                                            <th>Edit</th>
+                                            <th>Delete</th>
                                         </tr>
-                                    @endforeach
+                                    </thead>
+                                    <tbody>
+                                        @foreach ($roles as $role)
+                                            <tr>
+                                                <td>{{ $role->id }}</td>
+                                                <td>{{ $role->name }} <span><a href="{{ route('roles.show',$role->id) }}"><i class="fa fa-eye" aria-hidden="true"></i></a></span></td>
+                                                <td>
+                                                    @if ($role->permissions->count()>0)
+                                                    @foreach ($role->permissions as $permission)
+                                                          <span class=" badge badge-success"> {{ $permission->name }}</span>
+                                                    @endforeach
+                                                    @endif
+
+                                                </td>
+                                                <td><a href="{{ route('roles.edit',$role->id) }}" class="btn btn-sm btn-primary class="fas fa-edit    "></i></a></td>
+                                                <td>
+                                                    <form id="delete-form" action="{{ route('roles.destroy',$role->id) }}" method="POST" >
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="submit" class=" btn btn-sm btn-danger"><i class="fas fa-trash" aria-hidden="true"></i></button>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                        @endforeach
 
 
 
-                                </tbody>
+                                    </tbody>
 
-                            </table>
+                                </table>
+                            </div>
+
                         </div>
                         <!-- /.card-body -->
                     </div>
