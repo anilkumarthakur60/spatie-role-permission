@@ -52,10 +52,10 @@
                                                     <h2 class="dark_blue_heading">Dr.Abhiyan Luitel</h2>
                                                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                                         <li class="nav-item" role="presentation">
-                                                            <a class="nav-link active rounded-pill" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+                                                            <a class="nav-link active rounded-pill profile_tab" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
                                                         </li>
                                                         <li class="nav-item" role="presentation">
-                                                            <a class="nav-link rounded-pill" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+                                                            <a class="nav-link rounded-pill profile_tab" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
                                                         </li>
 
                                                     </ul>
