@@ -236,7 +236,7 @@
                                 <div class="mt-lg-5 col-sm-12 col-md-12 col-lg-12">
                                     <div class="row">
                                         <div class="col-sm-6">
-                                            <h4 class="dark_blue_heading my-4">Latest Patients List</h4>
+                                            <h4 class="dark_blue_heading my-4">Patient List</h4>
                                             <table class="table table-striped table-inverse table-responsi text-center border rounded rounded-lg example2 "  >
                                                 <thead class="thead-inverse">
                                                     <tr>
@@ -329,7 +329,7 @@
                                             </table>
                                         </div>
                                         <div class="col-sm-6">
-                                            <h4 class="dark_blue_heading my-4">Latest Patients List</h4>
+                                            <h4 class="dark_blue_heading my-4">Doctor List</h4>
                                             <table class="table table-striped table-inverse table-responsi text-center border rounded rounded-lg example2 " >
                                                 <thead class="thead-inverse">
                                                     <tr>
