@@ -3,7 +3,7 @@
 @section('content')
 <div class="row ">
     <div class="col-sm-6 ">
-        <h2 class="text-lg-left text-md-left text-sm-center my-5  text-uppercase text-primary ">RURAL TELEMEDICINE </h2>
+        <h2 class="text-lg-left text-md-left text-sm-center landind_text my-5  text-uppercase text-primary ">RURAL TELEMEDICINE </h2>
 
         <div class="vertical_center_image">
 
@@ -13,7 +13,7 @@
     </div>
     <div class="col-sm-6 ">
 
-        <h4 class="text-lg-right text-md-center text-sm-center   my-5  text-primary text-uppercase">Login</h4>
+        <h4 class="text-lg-right text-md-center text-sm-center landind_text   my-5  text-primary text-uppercase">Login</h4>
         <div class="vertical_center_login_form  ml-auto ">
             <form method="post" action="{{ url('/login') }}">
                 @csrf
