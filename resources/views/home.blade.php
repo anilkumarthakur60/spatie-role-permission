@@ -43,8 +43,8 @@
                                                 <div class="col-sm-12 col-md-6 col-lg-6 ">
                                                     <img src="{{ asset('frontend/images/desing.svg') }}" class="img-fluid rounded rounded-lg" alt="">
                                                     <div class=" my-4  text-center justify-content-center">
-                                                        <a href="" class="btn btn-md  btn-danger rounded-pill "><i class="fa fa-plus" aria-hidden="true"></i>Add Patient</a>
-                                                        <a href="" class="btn btn-md btn-danger rounded-pill"><i class="fa fa-plus" aria-hidden="true"></i>Add Patient</a>
+                                                        <a href="" class="btn btn-md  btn-danger delete-confirm rounded-pill "><i class="fa fa-plus" aria-hidden="true"></i>Add Patient</a>
+                                                        <a href="" class="btn btn-md btn-danger delete-confirm rounded-pill"><i class="fa fa-plus" aria-hidden="true"></i>Add Patient</a>
                                                     </div>
 
                                                 </div>
@@ -259,8 +259,8 @@
                                                         </td>
                                                         <td style="font-size: small;">
                                                             <form action="" method="post">
-                                                                @csrf
-                                                                <button type="submit" class="btn btn-sm btn-danger"><i class="fas fa-trash "></i></button>
+
+                                                                <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
                                                             </form>
                                                         </td>
                                                     </tr>
@@ -274,8 +274,8 @@
                                                         </td>
                                                         <td style="font-size: small;">
                                                             <form action="" method="post">
-                                                                @csrf
-                                                                <button type="submit" class="btn btn-sm btn-danger"><i class="fas fa-trash "></i></button>
+
+                                                                <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
                                                             </form>
                                                         </td>
                                                     </tr>
@@ -289,8 +289,8 @@
                                                         </td>
                                                         <td style="font-size: small;">
                                                             <form action="" method="post">
-                                                                @csrf
-                                                                <button type="submit" class="btn btn-sm btn-danger"><i class="fas fa-trash "></i></button>
+
+                                                                <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
                                                             </form>
                                                         </td>
                                                     </tr>
@@ -304,8 +304,8 @@
                                                         </td>
                                                         <td style="font-size: small;">
                                                             <form action="" method="post">
-                                                                @csrf
-                                                                <button type="submit" class="btn btn-sm btn-danger"><i class="fas fa-trash "></i></button>
+
+                                                                <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
                                                             </form>
                                                         </td>
                                                     </tr>
@@ -319,8 +319,8 @@
                                                         </td>
                                                         <td style="font-size: small;">
                                                             <form action="" method="post">
-                                                                @csrf
-                                                                <button type="submit" class="btn btn-sm btn-danger"><i class="fas fa-trash "></i></button>
+
+                                                                <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
                                                             </form>
                                                         </td>
                                                     </tr>
@@ -352,8 +352,8 @@
                                                         </td>
                                                         <td style="font-size: small;">
                                                             <form action="" method="post">
-                                                                @csrf
-                                                                <button type="submit" class="btn btn-sm btn-danger"><i class="fas fa-trash "></i></button>
+
+                                                                <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
                                                             </form>
                                                         </td>
                                                     </tr>
@@ -367,8 +367,8 @@
                                                         </td>
                                                         <td style="font-size: small;">
                                                             <form action="" method="post">
-                                                                @csrf
-                                                                <button type="submit" class="btn btn-sm btn-danger"><i class="fas fa-trash "></i></button>
+
+                                                                <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
                                                             </form>
                                                         </td>
                                                     </tr>
@@ -382,8 +382,8 @@
                                                         </td>
                                                         <td style="font-size: small;">
                                                             <form action="" method="post">
-                                                                @csrf
-                                                                <button type="submit" class="btn btn-sm btn-danger"><i class="fas fa-trash "></i></button>
+
+                                                                <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
                                                             </form>
                                                         </td>
                                                     </tr>
@@ -397,8 +397,8 @@
                                                         </td>
                                                         <td style="font-size: small;">
                                                             <form action="" method="post">
-                                                                @csrf
-                                                                <button type="submit" class="btn btn-sm btn-danger"><i class="fas fa-trash "></i></button>
+
+                                                                <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
                                                             </form>
                                                         </td>
                                                     </tr>
@@ -412,8 +412,8 @@
                                                         </td>
                                                         <td style="font-size: small;">
                                                             <form action="" method="post">
-                                                                @csrf
-                                                                <button type="submit" class="btn btn-sm btn-danger"><i class="fas fa-trash "></i></button>
+
+                                                                <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
                                                             </form>
                                                         </td>
                                                     </tr>
