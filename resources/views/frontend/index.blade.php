@@ -7,7 +7,7 @@
 
         <div class="vertical_center_image">
 
-            <img src="{{ asset('frontend/images/landing.svg') }}" class="img-fluid feature_image_login" alt="">
+            <img src="{{ asset('frontend/images/desing.svg') }}" class="img-fluid feature_image_login" alt="">
 
         </div>
     </div>
