@@ -260,7 +260,7 @@
                                                         <td style="font-size: small;">
                                                             <form action="" method="post">
 
-                                                                <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
+
                                                             </form>
                                                         </td>
                                                     </tr>
@@ -273,10 +273,7 @@
                                                             <a href="" class="btn btn-sm btn-primary"><i class="fas fa-edit    "></i></a>
                                                         </td>
                                                         <td style="font-size: small;">
-                                                            <form action="" method="post">
-
-                                                                <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
-                                                            </form>
+                                                           <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -288,10 +285,7 @@
                                                             <a href="" class="btn btn-sm btn-primary"><i class="fas fa-edit    "></i></a>
                                                         </td>
                                                         <td style="font-size: small;">
-                                                            <form action="" method="post">
-
-                                                                <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
-                                                            </form>
+                                                           <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -303,10 +297,7 @@
                                                             <a href="" class="btn btn-sm btn-primary"><i class="fas fa-edit    "></i></a>
                                                         </td>
                                                         <td style="font-size: small;">
-                                                            <form action="" method="post">
-
-                                                                <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
-                                                            </form>
+                                                           <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -318,10 +309,7 @@
                                                             <a href="" class="btn btn-sm btn-primary"><i class="fas fa-edit    "></i></a>
                                                         </td>
                                                         <td style="font-size: small;">
-                                                            <form action="" method="post">
-
-                                                                <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
-                                                            </form>
+                                                           <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
                                                         </td>
                                                     </tr>
 
@@ -351,10 +339,7 @@
                                                             <a href="" class="btn btn-sm btn-primary"><i class="fas fa-edit    "></i></a>
                                                         </td>
                                                         <td style="font-size: small;">
-                                                            <form action="" method="post">
-
-                                                                <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
-                                                            </form>
+                                                           <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -366,10 +351,7 @@
                                                             <a href="" class="btn btn-sm btn-primary"><i class="fas fa-edit    "></i></a>
                                                         </td>
                                                         <td style="font-size: small;">
-                                                            <form action="" method="post">
-
-                                                                <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
-                                                            </form>
+                                                           <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -381,10 +363,7 @@
                                                             <a href="" class="btn btn-sm btn-primary"><i class="fas fa-edit    "></i></a>
                                                         </td>
                                                         <td style="font-size: small;">
-                                                            <form action="" method="post">
-
-                                                                <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
-                                                            </form>
+                                                           <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -396,10 +375,7 @@
                                                             <a href="" class="btn btn-sm btn-primary"><i class="fas fa-edit    "></i></a>
                                                         </td>
                                                         <td style="font-size: small;">
-                                                            <form action="" method="post">
-
-                                                                <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
-                                                            </form>
+                                                           <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -411,10 +387,7 @@
                                                             <a href="" class="btn btn-sm btn-primary"><i class="fas fa-edit    "></i></a>
                                                         </td>
                                                         <td style="font-size: small;">
-                                                            <form action="" method="post">
-
-                                                                <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
-                                                            </form>
+                                                           <button type="submit" class="btn btn-sm btn-danger delete-confirm"><i class="fas fa-trash "></i></button>
                                                         </td>
                                                     </tr>
 
