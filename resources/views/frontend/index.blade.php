@@ -3,7 +3,7 @@
 
 <div class="row ">
     <div class="col-sm-6 ">
-        <h2 class="text-lg-left text-md-left text-sm-center my-5  text-uppercase text-primary ">RURAL TELEMEDICINE </h2>
+        <h2 class="text-lg-left text-md-left text-sm-center my-5 landind_text text-uppercase text-primary ">RURAL TELEMEDICINE </h2>
 
         <div class="vertical_center_image">
 
