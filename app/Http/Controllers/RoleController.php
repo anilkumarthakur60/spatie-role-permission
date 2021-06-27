@@ -11,19 +11,16 @@ class RoleController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('permission:create role|edit role|show role|delete role', ['only' => ['index','show']]);
-        $this->middleware('permission:create role', ['only' => ['create','store']]);
-        $this->middleware('permission:edit role', ['only' => ['edit','update']]);
+        $this->middleware('permission:create role|edit role|show role|delete role', ['only' => ['index', 'show']]);
+        $this->middleware('permission:create role', ['only' => ['create', 'store']]);
+        $this->middleware('permission:edit role', ['only' => ['edit', 'update']]);
         $this->middleware('permission:delete role', ['only' => ['destroy']]);
-
-
     }
 
     public function index()
     {
-        $roles=Role::with('permissions')->get();
-
-        return view('role.index',compact('roles'));
+        $roles = Role::with('permissions')->get();
+        return view('role.index', compact('roles'));
         //
     }
 
@@ -34,8 +31,8 @@ class RoleController extends Controller
      */
     public function create()
     {
-        $permission=Permission::all();
-        return view('role.create')->with('permissions',$permission);
+        $permission = Permission::all();
+        return view('role.create')->with('permissions', $permission);
         //
     }
 
@@ -47,12 +44,12 @@ class RoleController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request,[
-                'name'=>'required|unique:roles,name',
-                'permission'=>'required'
+        $this->validate($request, [
+            'name' => 'required|unique:roles,name',
+            'permission' => 'required'
         ]);
 
-        $role=Role::create(['name' =>$request->name]);
+        $role = Role::create(['name' => $request->name]);
         $role->syncPermissions($request->permission);
         toastr()->success('role Created Successfully');
         return redirect(route('roles.index'));
@@ -65,9 +62,10 @@ class RoleController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(Role $role)
-    {   $rolePermission=$role->with('permissions')->get();
+    {
+        $rolePermission = $role->with('permissions')->get();
 
-        return view('role.show')->with('role',$role)->with('rolepermission',$rolePermission);
+        return view('role.show')->with('role', $role)->with('rolepermission', $rolePermission);
         //
     }
 
@@ -80,15 +78,15 @@ class RoleController extends Controller
     public function edit($id)
     {
 
-        $role = Role::with('permissions')->where('id',$id)->first();
-        $permission=Permission::all();
-        $rolePermissions = DB::table("role_has_permissions")->where("role_has_permissions.role_id",$id)
-        ->pluck('role_has_permissions.permission_id','role_has_permissions.permission_id')
-        ->all();
+        $role = Role::with('permissions')->where('id', $id)->first();
+        $permission = Permission::all();
+        $rolePermissions = DB::table("role_has_permissions")->where("role_has_permissions.role_id", $id)
+            ->pluck('role_has_permissions.permission_id', 'role_has_permissions.permission_id')
+            ->all();
 
         // dd($role->permissions[0]->id);
-        return view('role.edit',compact('role','permission','rolePermissions'));
-                //
+        return view('role.edit', compact('role', 'permission', 'rolePermissions'));
+        //
     }
 
     /**
@@ -100,11 +98,11 @@ class RoleController extends Controller
      */
     public function update(Request $request, Role $role)
     {
-        $this->validate($request,[
-            'name'=>'required|unique:roles,name,'.$role->id
+        $this->validate($request, [
+            'name' => 'required|unique:roles,name,' . $role->id
         ]);
 
-        $role->update(['name'=>$request->name]);
+        $role->update(['name' => $request->name]);
         $role->syncPermissions($request->permission);
         toastr()->success('role updated successfully');
         return redirect(route('roles.index'));
