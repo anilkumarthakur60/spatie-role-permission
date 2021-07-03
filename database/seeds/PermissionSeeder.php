@@ -15,28 +15,23 @@ class PermissionSeeder extends Seeder
     public function run()
     {
 
-        $user=User::create([
-            'name'=>'anil kumar thakur',
-            'email'=>'anilkumarthakur60@gmail.com',
-            'password'=>bcrypt('aaaassss')
-        ]);
 
-        Permission::create(['name' => 'user create']);
-        Permission::create(['name' => 'user edit']);
-        Permission::create(['name' => 'user show']);
-        Permission::create(['name' => 'user delete']);
+        $permissions = [
+            'user-create',
+            'user-edit',
+            'user-show',
+            'user-delete',
 
-        Permission::create(['name' => 'create role']);
-        Permission::create(['name' => 'edit role']);
-        Permission::create(['name' => 'show role']);
-        Permission::create(['name' => 'delete role']);
+            'role-create',
+            'role-edit',
+            'role-show',
+            'role-delete',
 
 
+        ];
 
-        $role = Role::create(['name' => 'admin']);
-        $user->givePermissionTo(Permission::all());
-        $role->givePermissionTo(Permission::all());
-        $user->assignRole($role);
-
+        foreach ($permissions as $permission) {
+            Permission::create(['name' => $permission]);
+        }
     }
 }
