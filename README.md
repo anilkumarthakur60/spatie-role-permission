@@ -13,3 +13,6 @@ This package allows you to manage user permissions and roles in a database.
 <img src="http://rolepermission.herokuapp.com/githubimage/role_list.jpg" alt="Spatie Role Permission">
 <img src="http://rolepermission.herokuapp.com/githubimage/role_create.jpg" alt="Spatie Role Permission">
 <img src="http://rolepermission.herokuapp.com/githubimage/role_edit.jpg" alt="Spatie Role Permission">
+<img src="http://rolepermission.herokuapp.com/githubimage/user_list.jpg" alt="Spatie Role Permission">
+<img src="http://rolepermission.herokuapp.com/githubimage/user_create.jpg" alt="Spatie Role Permission">
+<img src="http://rolepermission.herokuapp.com/githubimage/user_edit.jpg" alt="Spatie Role Permission">
