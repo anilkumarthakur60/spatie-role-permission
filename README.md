@@ -23,20 +23,9 @@ Also Other List OF package used in this file is
 3. <a href="https://github.com/cviebrock/eloquent-sluggable">cviebrock/eloquent-sluggable </a>
    like if you have Post Model
 
-<p>
-use Cviebrock\EloquentSluggable\Sluggable;
-class Post extends Model
-{
-use Sluggable;
-    public function sluggable(): array
-    {
-        return [
-            'slug' => [
-                'source' => 'title'
-            ]
-        ];
-    }
-
-}
-
-</p>
+```html
+use Cviebrock\EloquentSluggable\Sluggable; class Post extends Model { use
+Sluggable; /** * Return the sluggable configuration array for this model. * *
+@return array */ public function sluggable(): array { return [ 'slug' => [
+'source' => 'title' ] ]; } }
+```
