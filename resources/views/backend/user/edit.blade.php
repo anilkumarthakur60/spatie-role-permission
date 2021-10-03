@@ -28,7 +28,7 @@
 
                     <div class="card">
                         <div class="card-header">
-                            <h4 class=" text-center">Update User</h4>
+                            <h4 class=" text-center">Edit User</h4>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">

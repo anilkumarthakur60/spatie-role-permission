@@ -28,7 +28,7 @@
 
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title ">DataTable with default features</h3>
+                            <h3 class="card-title ">Role List</h3>
                             <a href="{{ route('roles.create') }}" class=" btn btn-sm btn-primary float-right">Add
                                 Roles</a>
                         </div>

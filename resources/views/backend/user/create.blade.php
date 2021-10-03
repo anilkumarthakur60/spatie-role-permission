@@ -29,7 +29,7 @@
 
                     <div class="card">
                         <div class="card-header">
-                            <h4 class=" text-center">Create New</h4>
+                            <h4 class=" text-center">Create New User</h4>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
