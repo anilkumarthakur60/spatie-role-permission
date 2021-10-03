@@ -10,6 +10,6 @@ This package allows you to manage user permissions and roles in a database.
 <a href="https://spatie.be/docs/laravel-permission/v5/introduction"><img src="https://raw.githubusercontent.com/spatie/laravel-permission/main/art/socialcard.png" alt="Spatie Role Permission"></a>
 
 </p>
-<img src="http://rolepermission.herokuapp.com/githubimage/role.jpg" alt="Spatie Role Permission">
-<img src="http://rolepermission.herokuapp.com/githubimage/role1.jpg" alt="Spatie Role Permission">
+<img src="http://rolepermission.herokuapp.com/githubimage/role_list.jpg" alt="Spatie Role Permission">
+<img src="http://rolepermission.herokuapp.com/githubimage/role_create.jpg" alt="Spatie Role Permission">
 <img src="http://rolepermission.herokuapp.com/githubimage/role_edit.jpg" alt="Spatie Role Permission">
