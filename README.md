@@ -17,30 +17,34 @@ This package allows you to manage user permissions and roles in a database.
 <img src="http://rolepermission.herokuapp.com/githubimage/user_create.jpg" alt="Spatie Role Permission">
 <img src="http://rolepermission.herokuapp.com/githubimage/user_edit.jpg" alt="Spatie Role Permission">
 
-Also Other List OF package used in this file is
+Also Other List of package used in this Repo are
 
-2. <a href="https://github.com/yoeunes/toastr">Toastr Notifications </a>
-3. <a href="https://github.com/cviebrock/eloquent-sluggable">cviebrock/eloquent-sluggable </a>
-   like if you have Post Model
+2.  <a href="https://github.com/yoeunes/toastr">Toastr Notifications </a>
+3.  <a href="https://github.com/cviebrock/eloquent-sluggable">cviebrock/eloquent-sluggable </a>
+    like if you have Post Model
 
-```php
-use Cviebrock\EloquentSluggable\Sluggable;
-class Post extends Model
-{
-    use Sluggable;
+         ```php
+                 use Cviebrock\EloquentSluggable\Sluggable;
+                 class Post extends Model
+                 {
+                     use Sluggable;
 
-    /**
-     * Return the sluggable configuration array for this model.
-     *
-     * @return array
-     */
-    public function sluggable(): array
-    {
-        return [
-            'slug' => [
-                'source' => 'title'
-            ]
-        ];
-    }
-}
-```
+                     /**
+                      * Return the sluggable configuration array for this model.
+                      *
+                      * @return array
+                      */
+                     public function sluggable(): array
+                     {
+                         return [
+                             'slug' => [
+                                 'source' => 'title'
+                             ]
+                         ];
+                     }
+                 }
+         ```
+
+4.  <a href="https://github.com/artesaos/seotools">artesaos/seotools </a>
+5.  <a href="https://github.com/jorenvh/laravel-share">jorenvanhocht/laravel-share </a>
+    <p> layouts/sharebutton.blade.php </p>
