@@ -2,6 +2,7 @@ This repository contains a collection of Packages which may be required while st
 This is not a package - it's a small part of Laravel project that you can use in a any project and then add your own custom functionality.
 
 There are endpoints for any applications I've been using while starting any new project.
+<br>
 1.Laravel Roles Permissions Admin panel based on the Spatie Role Permission package
 This package allows you to manage user permissions and roles in a database.
 
