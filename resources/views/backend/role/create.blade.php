@@ -58,8 +58,8 @@
                                     <label for="" class="col-sm-2 col-form-label">Assign Permission</label>
 
                                     <div class="col-sm-9 border border-success p-4">
-                                        <label class="">    <input type=" checkbox" name="checkedAll" id="checkedAll"
-                                            class="mr-2" />Check all </label>
+                                        <label> <input type="checkbox" name="checkedAll" id="checkedAll"
+                                                class="mr-2" />Check all </label>
                                         <hr>
                                         <div class="row">
 

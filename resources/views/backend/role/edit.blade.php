@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+    <!-- Content Header (Page header) -->
     <section class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
@@ -9,7 +10,7 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
-                        <li class="breadcrumb-item active">userCreate</li>
+                        <li class="breadcrumb-item active">roleEdit</li>
                     </ol>
                 </div>
             </div>
@@ -22,11 +23,9 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
-
-
                     <div class="card">
                         <div class="card-header">
-                            <h4 class=" text-center">User New Create</h4>
+                            <h4 class=" text-center">Edit Role</h4>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -60,8 +59,8 @@
                                     <label for="" class="col-sm-2 col-form-label">Assign Permission</label>
 
                                     <div class="col-sm-9 border border-success p-4">
-                                        <label class=""> <input type=" checkbox" name="checkedAll" id="checkedAll"
-                                            class="mr-2" />Check all </label>
+                                        <label> <input type="checkbox" name="checkedAll" id="checkedAll"
+                                                class="mr-2" />Check all </label>
                                         <hr>
                                         <div class="row">
 
@@ -75,22 +74,14 @@
                                                 </div>
 
                                             @endforeach
-                                            <hr>
+
 
                                         </div>
                                     </div>
                                 </div>
-
-
-
-
-
-
                                 <div class="form-group row">
                                     <div class="col-sm-12 text-center">
-
-
-                                        <button type="submit" class=" btn btn-primary">Submit</button>
+                                        <button type="submit" class=" btn btn-danger">Submit</button>
                                     </div>
                                 </div>
                             </form>
@@ -101,24 +92,13 @@
         </div>
     </section>
 
-
+    </div>
 @endsection
 
-@section('css')
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
-
-@endsection
 
 @section('script')
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.js_multiple_selects').select2({
-                theme: "classic"
-            });
-        });
-    </script>
+
     <script>
         $(document).ready(function() {
             $("#checkedAll").change(function() {
@@ -149,6 +129,4 @@
             });
         });
     </script>
-
-
 @endsection
