@@ -16,3 +16,33 @@ This package allows you to manage user permissions and roles in a database.
 <img src="http://rolepermission.herokuapp.com/githubimage/user_list.jpg" alt="Spatie Role Permission">
 <img src="http://rolepermission.herokuapp.com/githubimage/user_create.jpg" alt="Spatie Role Permission">
 <img src="http://rolepermission.herokuapp.com/githubimage/user_edit.jpg" alt="Spatie Role Permission">
+
+Also Other List OF package used in this file is
+
+2. <a href="https://github.com/yoeunes/toastr">Toastr Notifications </a>
+3. <a href="https://github.com/cviebrock/eloquent-sluggable">cviebrock/eloquent-sluggable </a>
+   like if you have Post Model
+
+<p>
+use Cviebrock\EloquentSluggable\Sluggable;
+class Post extends Model
+{
+use Sluggable;
+
+    /**
+     * Return the sluggable configuration array for this model.
+     *
+     * @return array
+     */
+    public function sluggable(): array
+    {
+        return [
+            'slug' => [
+                'source' => 'title'
+            ]
+        ];
+    }
+
+}
+
+</p>

@@ -178,7 +178,9 @@ return [
         Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
         Jorenvh\Share\Providers\ShareServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
-        Intervention\Image\ImageServiceProvider::class
+        Intervention\Image\ImageServiceProvider::class,
+        Yoeunes\Toastr\ToastrServiceProvider::class
+
 
 
 
