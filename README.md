@@ -47,4 +47,5 @@ Also Other List of package used in this Repo are
 
 4.  <a href="https://github.com/artesaos/seotools">artesaos/seotools </a>
 5.  <a href="https://github.com/jorenvh/laravel-share">jorenvanhocht/laravel-share </a>
-    <p> layouts/sharebutton.blade.php </p>
+6.  <a href="https://github.com/anilkumarthakur60/spatie-role-permission/blob/main/resources/views/layouts/sharebutton.blade.php">layouts/sharebutton.blade.php </a>
+    <p> just include this file where you want to have social media share link/buttons  layouts/sharebutton.blade.php </p>
