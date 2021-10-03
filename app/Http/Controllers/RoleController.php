@@ -11,16 +11,16 @@ class RoleController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('permission:create role|edit role|show role|delete role', ['only' => ['index', 'show']]);
-        $this->middleware('permission:create role', ['only' => ['create', 'store']]);
-        $this->middleware('permission:edit role', ['only' => ['edit', 'update']]);
-        $this->middleware('permission:delete role', ['only' => ['destroy']]);
+        $this->middleware('permission:role-create|role-edit|role-show|role-delete', ['only' => ['index', 'show']]);
+        $this->middleware('permission:role-create', ['only' => ['create', 'store']]);
+        $this->middleware('permission:role-edit', ['only' => ['edit', 'update']]);
+        $this->middleware('permission:role-delete', ['only' => ['destroy']]);
     }
 
     public function index()
     {
         $roles = Role::with('permissions')->get();
-        return view('role.index', compact('roles'));
+        return view('backend.role.index', compact('roles'));
         //
     }
 
@@ -32,7 +32,8 @@ class RoleController extends Controller
     public function create()
     {
         $permission = Permission::all();
-        return view('role.create')->with('permissions', $permission);
+
+        return view('backend.role.create')->with('permissions', $permission);
         //
     }
 
@@ -65,7 +66,7 @@ class RoleController extends Controller
     {
         $rolePermission = $role->with('permissions')->get();
 
-        return view('role.show')->with('role', $role)->with('rolepermission', $rolePermission);
+        return view('backend.role.show')->with('role', $role)->with('rolepermission', $rolePermission);
         //
     }
 
@@ -85,7 +86,7 @@ class RoleController extends Controller
             ->all();
 
         // dd($role->permissions[0]->id);
-        return view('role.edit', compact('role', 'permission', 'rolePermissions'));
+        return view('backend.role.edit', compact('role', 'permission', 'rolePermissions'));
         //
     }
 

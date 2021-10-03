@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
+use App\Models\User;
+use App\Station;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -14,18 +16,17 @@ class UserController extends Controller
 
     public function __construct()
     {
-        $this->middleware('permission:user create|user edit|user show|user delete', ['only' => ['index','show']]);
-        $this->middleware('permission:user create', ['only' => ['create','store']]);
-        $this->middleware('permission:user edit', ['only' => ['edit','update']]);
-        $this->middleware('permission:user delete', ['only' => ['destroy']]);
-
-
+        $this->middleware('permission:user-create|user-edit|user-show|user-delete', ['only' => ['index', 'show']]);
+        $this->middleware('permission:user-create', ['only' => ['create', 'store']]);
+        $this->middleware('permission:user-edit', ['only' => ['edit', 'update']]);
+        $this->middleware('permission:user-delete', ['only' => ['destroy']]);
     }
     public function index()
     {
-        $user=User::orderBy('id','desc')->with('roles')->get();
+        $user = User::orderBy('id', 'desc')->with(['roles'])->get();
 
-        return view('user.index')->with('users',$user);
+
+        return view('backend.user.index')->with('users', $user);
     }
 
     /**
@@ -35,9 +36,10 @@ class UserController extends Controller
      */
     public function create()
     {
-        $role=Role::all();
+        $role = Role::all();
 
-        return view('user.create')->with('roles',$role);
+
+        return view('backend.user.create')->with('roles', $role)->with('stations');
 
         //
     }
@@ -50,27 +52,29 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request,[
+        $this->validate($request, [
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users,email'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'roles' => 'required'
+            'roles' => 'required',
         ]);
 
-        $input = $request->all();
-        $password=$request->password;
-            $password=Hash::make($password);
-            $user=User::create([
-                'name'=>$request->name,
-                'email'=>$request->email,
-                'password'=>$password
-            ]);
 
-            $user->assignRole($request->input('roles'));
 
-            toastr()->success('User Created Successfully');
-            return redirect(route('users.index'));
 
+        $password = $request->password;
+        $password = Hash::make($password);
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => $password,
+
+        ]);
+
+        $user->assignRole($request->input('roles'));
+
+        toastr()->success('User Created Successfully');
+        return redirect(route('users.index'));
     }
 
     /**
@@ -81,7 +85,8 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
-        return view('user.show')->with('user',$user);
+
+        return view('backend.user.show')->with('user', $user);
         //
     }
 
@@ -93,9 +98,8 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
-        $role=Role::all();
-
-        return view('user.update')->with('user',$user)->with('roles',$role);
+        $role = Role::all();
+        return view('backend.user.edit')->with('user', $user)->with('roles', $role)->with('stations');
         //
     }
 
@@ -108,19 +112,21 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        $this->validate($request,[
+        $this->validate($request, [
             'name' => 'required',
-            'email' => 'required|email|unique:users,email,'.$user->id,
-            'roles' => 'required'
+            'email' => 'required|email|unique:users,email,' . $user->id,
+            'roles' => 'required',
+
         ]);
 
-        $input=$request->all();
+        $input = $request->all();
+        if ($request->email != Auth::user()->email) {
+            $input['email_verified_at'] = null;
+        }
         $user->update($input);
         $user->syncRoles($request->roles);
         toastr()->success('user updated Successfully');
         return redirect()->route('users.index');
-
-
     }
 
     /**
