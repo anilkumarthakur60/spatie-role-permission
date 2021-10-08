@@ -9,10 +9,16 @@ use Illuminate\Notifications\Notifiable;
 use Spatie\Permission\Traits\HasRoles;
 
 use Laravel\Sanctum\HasApiTokens;
+use Staudenmeir\EloquentHasManyDeep\HasRelationships;
+use Znck\Eloquent\Traits\BelongsToThrough;
 
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, HasRoles, Notifiable;
+    use BelongsToThrough;
+    use HasRelationships;
+
+
 
     /**
      *
