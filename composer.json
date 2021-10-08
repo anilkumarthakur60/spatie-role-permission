@@ -23,6 +23,7 @@
         "spatie/laravel-backup": "^7.6",
         "spatie/laravel-newsletter": "^4.10",
         "spatie/laravel-permission": "^5.1",
+        "staudenmeir/eloquent-has-many-deep": "^1.14",
         "unisharp/laravel-filemanager": "^2.2",
         "yoeunes/toastr": "^1.2"
     },
