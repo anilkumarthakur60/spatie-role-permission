@@ -31,7 +31,7 @@ class RoleController extends Controller
      */
     public function create()
     {
-        $permission = Permission::all();
+        $permission = Permission::whereNotIn('name', ['user-delete'])->get();
 
         return view('backend.role.create')->with('permissions', $permission);
         //
