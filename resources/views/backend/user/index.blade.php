@@ -82,7 +82,8 @@
                                                         <button type="submit" class=" btn btn-sm btn-danger"><i
                                                                 class="fas fa-trash" aria-hidden="true"></i></button>
                                                     </form>
-
+                                                    @else
+                                                    N/A
                                                 @endcan
                                             </td>
 
