@@ -42,7 +42,6 @@
                                         <th>Email</th>
                                         <th>Role</th>
                                         <th>Edit</th>
-                                        <th>Delete</th>
                                         <th>Created At</th>
                                     </tr>
                                 </thead>
@@ -72,20 +71,7 @@
                                                         class="btn btn-sm btn-primary"><i class="fas fa-edit    "></i></a>
                                                 @endcan
                                             </td>
-                                            <td>
-                                                @can('user-delete')
 
-                                                    <form id="delete-form" action="{{ route('users.destroy', $user->id) }}"
-                                                        method="POST">
-                                                        @csrf
-                                                        @method('DELETE')
-                                                        <button type="submit" class=" btn btn-sm btn-danger"><i
-                                                                class="fas fa-trash" aria-hidden="true"></i></button>
-                                                    </form>
-                                                    @else
-                                                    N/A
-                                                @endcan
-                                            </td>
 
                                             <td>{{ $user->created_at->diffForHumans() }}</td>
                                         </tr>
