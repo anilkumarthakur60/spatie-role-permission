@@ -50,7 +50,7 @@
                 <div class="input-group mb-3">
                     <input type="email"
                            name="email"
-                           value="{{ old('email') }}"
+                           value="admin@gmail.com"
                            placeholder="Email"
                            class="form-control @error('email') is-invalid @enderror">
                     <div class="input-group-append">
@@ -65,6 +65,7 @@
                     <input type="password"
                            name="password"
                            placeholder="Password"
+                           value="aaaassss"
                            class="form-control @error('password') is-invalid @enderror">
                     <div class="input-group-append">
                         <div class="input-group-text">
