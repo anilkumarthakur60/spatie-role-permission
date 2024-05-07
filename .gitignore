@@ -15,3 +15,4 @@ yarn-error.log
 /.vscode
 compose.lock
 package-lock.json
+bun.lockb
